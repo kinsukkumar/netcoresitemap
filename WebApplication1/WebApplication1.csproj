@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\App_Data\sitemap.xml" />
+    <Content Remove="wwwroot\css\sitemap.xml" />
+    <Content Remove="wwwroot\folder1\sitemap.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.SEOHelper" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\App_Data\sitemap.xml" />
+    <None Include="wwwroot\css\sitemap.xml" />
+    <None Include="wwwroot\folder1\sitemap.xml" />
+  </ItemGroup>
+
+</Project>
