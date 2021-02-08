@@ -35,3 +35,4 @@ C:\Projects\sitemap-demo\sitemap-demo\WebApplication1\obj\Debug\netcoreapp3.1\We
 C:\Projects\sitemap-demo\sitemap-demo\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 C:\Projects\sitemap-demo\sitemap-demo\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\Projects\sitemap-demo\sitemap-demo\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+C:\Projects\sitemap-demo\sitemap-demo\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache

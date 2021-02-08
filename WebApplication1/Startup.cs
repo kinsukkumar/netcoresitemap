@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCore.SEOHelper;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace WebApplication1
 {
@@ -41,7 +43,12 @@ namespace WebApplication1
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(env.ContentRootPath, "App_Data")),
+                RequestPath = "/App_Data"
+            });
 
             app.UseXMLSitemap(env.ContentRootPath);
 
